@@ -1,0 +1,65 @@
+/* Grundstil för hela sidan */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Behållare för appens innehåll */
+.app {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Del för att visa meddelanden */
+.screen {
+    margin-bottom: 15px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Meddelandetexten */
+#output {
+    height: 50px;
+    padding: 10px;
+}
+
+/* Inputfältet */
+#input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Layout för knapparna */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Utseende på alla knappar */
+.numpad button,
+.actions button {
+    padding: 10px;
+    font-size: 16px;
+    width: 70px;
+    margin: 3px;
+    border: none;
+    background: #2196f3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover-effekt för knappar */
+button:hover {
+    background-color: #1976d2;
+}

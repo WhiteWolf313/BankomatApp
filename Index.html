@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankomatApp</title>
+    <!-- Länkar till CSS-stilen -->
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+    <!-- Huvudbehållare för hela appen -->
+    <div class="app">
+
+        <!-- Skärm som visar status och meddelanden -->
+        <div class="screen">
+            <h2 id="userDisplay">Ej inloggad</h2>
+            <div id="output">Välkommen till BankomatApp</div>
+        </div>
+
+        <!-- Visar vad man har matat in -->
+        <input type="password" id="input" readonly />
+
+        <!-- Knappar för siffror och funktioner -->
+        <div class="buttons">
+            <div class="numpad">
+                <!-- Sifferknappar -->
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button onclick="press('0')">0</button>
+                <button onclick="clearInput()">C</button> <!-- Rensa input -->
+            </div>
+
+            <!-- Funktionella knappar -->
+            <div class="actions">
+                <button onclick="login()">Logga in</button>
+                <button onclick="logout()">Logga ut</button>
+                <button onclick="checkBalance()">Visa saldo</button>
+                <button onclick="deposit()">Insättning</button>
+                <button onclick="withdraw()">Uttag</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Länk till JavaScript -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
